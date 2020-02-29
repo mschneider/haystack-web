@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Haystack Search</title>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssnormalize/cssnormalize-min.css">
+    <style>
+      h1, form#search {
+        display: inline-block;
+        margin-left: 1em;
+        font-size: 1.5em;
+      }
+
+      li {
+        display: inline-block;
+        padding-right: 1em;
+      }
+
+      #results {
+        overflow: auto;
+        white-space: nowrap;
+      }
+
+      .result-column {
+        display: inline-block;
+        vertical-align: top;
+        width: 300px;
+      }
+
+      .result {
+        display: block;
+        white-space: normal;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 5px;
+      }
+
+      .result.gmail {
+        border: 1px solid red;
+      }
+
+      .result.gdrive {
+        border: 1px solid #e8f0ff;
+      }
+
+      .result p.result-snippet {
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Haystack Search</h1>
+      <form id=search>
+        <input type="text" name="q" />
+        <input type="submit" value="Submit" />
+      </form>
+    </header>
+    <section id="filter">
+      <ul>
+        <li class="selected">All</li>
+        <li>Documents</li>
+        <li>Images</li>
+        <li>Code</li>
+      </ul>
+    </section>
+    <section id="results">
+      <div class="result-column" id="gmail-1">
+        <div class="result gmail">
+          <p class="result-snippet">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="result gmail">
+          <p class="result-snippet">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+
+        </div>
+        <div class="result gmail">
+          <p class="result-snippet">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+
+        </div>
+      </div>
+
+      <div class="result-column" id="gmail-2">
+        <div class="result gmail">
+          <p class="result-snippet">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+
+        </div>
+        <div class="result gmail">
+          <p class="result-snippet">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+
+        </div>
+      </div>
+
+      <div class="result-column" id="gdrive-1">
+        <div class="result gdrive">
+          <p class="result-snippet">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+
+        </div>
+        <div class="result gdrive">
+          <p class="result-snippet">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
