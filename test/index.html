@@ -55,22 +55,32 @@
       .result {
         display: block;
         white-space: normal;
-        padding: 10px;
         margin: 5px;
         border-radius: 5px;
+        border: 1px solid #aaa;
       }
 
-      .result.gmail {
-        border: 1px solid red;
+      img.service-icon {
+        width: 1.2em;
+        height: 1.2em;
+        vertical-align: top;
       }
 
-      .result.gdrive {
-        border: 1px solid #e8f0ff;
+      .result .result-header {
+        border-bottom: 1px solid #aaa;
+        padding: 0.5em;
+        font-size: 0.8em;
+        font-weight: bold;
       }
 
-      .result p.result-snippet {
-        padding: 0;
+      .result .result-header .result-title {
+        padding-left: 0.2em;
+      }
+
+      .result .result-snippet {
+        padding: 0.5em;
         margin: 0;
+        font-size: 0.9em;
       }
     </style>
   </head>
@@ -93,16 +103,28 @@
     <section id="results">
       <div class="result-column" id="gmail-1">
         <div class="result gmail">
+          <div class="result-header">
+            <img class="service-icon" src="assets/gmail.png"></img>
+            <span class="result-title">Important Email</span>
+          </div>
           <p class="result-snippet">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
         </div>
         <div class="result gmail">
+          <div class="result-header">
+            <img class="service-icon" src="assets/gmail.png"></img>
+            <span class="result-title">Important Email</span>
+          </div>
           <p class="result-snippet">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
         </div>
         <div class="result gmail">
+          <div class="result-header">
+            <img class="service-icon" src="assets/gmail.png"></img>
+            <span class="result-title">Important Email</span>
+          </div>
           <p class="result-snippet">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
@@ -111,27 +133,40 @@
 
       <div class="result-column" id="gmail-2">
         <div class="result gmail">
+          <div class="result-header">
+            <img class="service-icon" src="assets/gmail.png"></img>
+            <span class="result-title">Important Email</span>
+          </div>
           <p class="result-snippet">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
-
         </div>
         <div class="result gmail">
+          <div class="result-header">
+            <img class="service-icon" src="assets/gmail.png"></img>
+            <span class="result-title">Important Email</span>
+          </div>
           <p class="result-snippet">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
-
         </div>
       </div>
 
       <div class="result-column" id="gdrive-1">
         <div class="result gdrive">
+          <div class="result-header">
+            <img class="service-icon" src="assets/gdrive.png"></img>
+            <span class="result-title">Important File</span>
+          </div>
           <p class="result-snippet">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
-
         </div>
         <div class="result gdrive">
+          <div class="result-header">
+            <img class="service-icon" src="assets/gdrive.png"></img>
+            <span class="result-title">Important File</span>
+          </div>
           <p class="result-snippet">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
