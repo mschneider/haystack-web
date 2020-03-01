@@ -8,23 +8,48 @@
       h1, form#search {
         display: inline-block;
         margin-left: 1em;
-        font-size: 1.5em;
+      }
+
+      h1 {
+        font-family: 'Serif';
+        color: #F3BB30;
+        font-size: 2.8em;
+        margin-top: 0.5em;
+        margin-bottom: 0em;
+      }
+
+      form#search {
+        font-size: 1em;
+        vertical-align: super;
+      }
+
+      input#q {
+        width: 50vw;
       }
 
       li {
         display: inline-block;
-        padding-right: 1em;
+        margin-right: 1em;
+        padding: 0.1em;
+      }
+
+      li.selected {
+        border-bottom: 3px solid #F3BB30;
       }
 
       #results {
         overflow: auto;
         white-space: nowrap;
+        border-top: 1px solid black;
       }
 
       .result-column {
         display: inline-block;
         vertical-align: top;
         width: 300px;
+        border-right: 1px solid black;
+        margin-right: -3px;
+        height: 100%;
       }
 
       .result {
@@ -51,10 +76,10 @@
   </head>
   <body>
     <header>
-      <h1>Haystack Search</h1>
+      <h1>Haystack</h1>
       <form id=search>
-        <input type="text" name="q" />
-        <input type="submit" value="Submit" />
+        <input id="q" type="text" name="q" />
+        <input type="submit" value="Search" />
       </form>
     </header>
     <section id="filter">
@@ -76,13 +101,11 @@
           <p class="result-snippet">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
-
         </div>
         <div class="result gmail">
           <p class="result-snippet">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
-
         </div>
       </div>
 
@@ -112,7 +135,6 @@
           <p class="result-snippet">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
-
         </div>
       </div>
     </section>
